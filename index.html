@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mufqi Andika Pangestu — Digital Builder, Developer & Data Analyst</title>
+  <meta name="description" content="Portfolio Mufqi Andika Pangestu — Mobile Developer, Web Engineer, Data Analyst, UI/UX Designer dari Jakarta." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- Three.js for immersive 3D background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <canvas id="nature-canvas"></canvas>
+
+  <div class="cursor-leaf" id="cursorLeaf">🍃</div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">MAP<span class="nb-dot">☘</span></a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Beranda</a>
+        <a href="#about" class="nav-link">Tentang</a>
+        <a href="#education" class="nav-link">Pendidikan</a>
+        <a href="#skills" class="nav-link">Keahlian</a>
+        <a href="#projects" class="nav-link">Proyek</a>
+        <a href="#data" class="nav-link">Data & Digital</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="CVMufqiAndikaPangestu.pdf" download class="btn-cv">⬇ Download CV</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div class="nav-mobile" id="navMobile">
+      <a href="#home">Beranda</a>
+      <a href="#about">Tentang</a>
+      <a href="#education">Pendidikan</a>
+      <a href="#skills">Keahlian</a>
+      <a href="#projects">Proyek</a>
+      <a href="#data">Data & Digital</a>
+      <a href="#contact">Kontak</a>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO SECTION (Botanical Split Layout)
+  ============================================================ -->
+  <section id="home" class="section s-hero">
+    <div class="container hero-unified">
+      <div class="hero-content">
+        <div class="hn-badge reveal">
+          <span class="badge-pulse"></span>
+          🌿 Tersedia untuk Peluang Baru · 2025
+        </div>
+        <h1 class="hn-name reveal">
+          <span class="hn-first">Mufqi Andika</span>
+          <span class="hn-last">Pangestu</span>
+        </h1>
+        <p class="hn-role reveal">Mobile Developer &nbsp;·&nbsp; Web Engineer &nbsp;·&nbsp; Data Analyst &nbsp;·&nbsp; UI/UX Designer</p>
+        <p class="hn-bio reveal">
+          Mahasiswa S1 Sistem dan Teknologi Informasi di UHAMKA Jakarta dengan IPK membanggakan 3.66/4.00. Saya adalah seorang <strong>digital builder</strong> yang membangun solusi teknologi end-to-end — mulai dari aplikasi mobile Flutter yang kaya fitur, platform web full-stack berbasis Laravel &amp; CodeIgniter, manajemen database MySQL yang terstruktur, hingga analisis data bisnis dengan SQL &amp; Excel yang menghasilkan insight actionable. Saya percaya bahwa teknologi terbaik adalah yang menyelesaikan masalah nyata manusia dengan cara yang elegan, efisien, dan berdampak.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn-primary">Lihat Proyek Saya <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a href="#contact" class="btn-secondary">Mari Berkolaborasi</a>
+        </div>
+        
+        <div class="hn-stats reveal">
+          <div class="hs-item"><strong>3.66</strong><span>IPK / 4.00</span></div>
+          <div class="hs-sep"></div>
+          <div class="hs-item"><strong>6+</strong><span>Proyek Nyata</span></div>
+          <div class="hs-sep"></div>
+          <div class="hs-item"><strong>8+</strong><span>Teknologi</span></div>
+          <div class="hs-sep"></div>
+          <div class="hs-item"><strong>3+</strong><span>Tahun Belajar</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visuals reveal">
+        <!-- Developer Profile Organic Card -->
+        <div class="ho-code-card hover-tilt cinematic-card">
+          <div class="hcc-header">
+            <div class="hcc-dots"><span></span><span></span><span></span></div>
+            <span class="hcc-title">developer.profile</span>
+          </div>
+          <div class="hcc-body">
+            <div class="hcc-line"><span class="hcc-k">const</span> <span class="hcc-v">developer</span> <span class="hcc-o">=</span> <span class="hcc-b">{</span></div>
+            <div class="hcc-line pl"><span class="hcc-k">name</span><span class="hcc-o">:</span> <span class="hcc-s">"Mufqi Andika Pangestu"</span><span class="hcc-p">,</span></div>
+            <div class="hcc-line pl"><span class="hcc-k">gpa</span><span class="hcc-o">:</span> <span class="hcc-n">3.66</span><span class="hcc-p">,</span></div>
+            <div class="hcc-line pl"><span class="hcc-k">university</span><span class="hcc-o">:</span> <span class="hcc-s">"UHAMKA Jakarta"</span><span class="hcc-p">,</span></div>
+            <div class="hcc-line pl"><span class="hcc-k">skills</span><span class="hcc-o">:</span> <span class="hcc-b">[</span></div>
+            <div class="hcc-line pl2"><span class="hcc-s">"Flutter"</span><span class="hcc-p">,</span> <span class="hcc-s">"Laravel"</span><span class="hcc-p">,</span></div>
+            <div class="hcc-line pl2"><span class="hcc-s">"MySQL"</span><span class="hcc-p">,</span> <span class="hcc-s">"Figma"</span><span class="hcc-p">,</span></div>
+            <div class="hcc-line pl2"><span class="hcc-s">"Data Analytics"</span></div>
+            <div class="hcc-line pl"><span class="hcc-b">]</span><span class="hcc-p">,</span></div>
+            <div class="hcc-line pl"><span class="hcc-k">status</span><span class="hcc-o">:</span> <span class="hcc-s">"Open to Opportunities"</span><span class="hcc-p">,</span></div>
+            <div class="hcc-line pl"><span class="hcc-k">location</span><span class="hcc-o">:</span> <span class="hcc-s">"Jakarta Timur 🇮🇩"</span></div>
+            <div class="hcc-line"><span class="hcc-b">}</span><span class="hcc-p">;</span></div>
+          </div>
+        </div>
+
+        <!-- Float Profile Nature Photo Frame -->
+        <div class="hn-photo-wrap hover-tilt">
+          <div class="hn-photo-ring r1"></div>
+          <div class="hn-photo-ring r2"></div>
+          <div class="hn-photo-card">
+            <img src="profile.png" alt="Foto Mufqi Andika Pangestu" class="hn-photo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.hn-photo-fallback').style.display='flex';" />
+            <div class="hn-photo-fallback">MAP</div>
+            <div class="hn-photo-info">
+              <strong>Mufqi Andika P.</strong>
+              <span>Mobile &amp; Web Developer</span>
+              <small>📍 Jakarta Timur, Indonesia</small>
+            </div>
+          </div>
+          <!-- Floating Botanical Badges -->
+          <div class="hn-fb fb1"><span>📱</span><div><b>Flutter</b><small>Mobile Dev</small></div></div>
+          <div class="hn-fb fb2"><span>📊</span><div><b>Data Analytics</b><small>SQL &amp; Excel</small></div></div>
+          <div class="hn-fb fb3"><span>🌐</span><div><b>Web Dev</b><small>Laravel &amp; CI</small></div></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hn-scroll-hint">
+      <div class="sh-arrow"></div>
+      <span>Scroll ke bawah</span>
+    </div>
+  </section>
+
+  <!-- MOUNTAIN SILHOUETTE TRANSITION -->
+  <div class="section-divider sd-mountain">
+    <svg viewBox="0 0 1440 220" preserveAspectRatio="none">
+      <path class="morph-wave-1" fill="#faf8f2" d="M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,149.3C672,149,768,107,864,101.3C960,96,1056,128,1152,144C1248,160,1344,160,1392,160L1440,160L1440,220L1392,220C1344,220,1248,220,1152,220C1056,220,960,220,864,220C768,220,672,220,576,220C480,220,384,220,288,220C192,220,96,220,48,220L0,220Z"></path>
+      <path class="morph-wave-2" fill="rgba(59, 130, 246, 0.04)" d="M0,180L60,150C120,120,240,60,360,65C480,70,600,140,720,155C840,170,960,130,1080,120C1200,110,1320,130,1380,140L1440,150L1440,220L1380,220C1320,220,1200,220,1080,220C960,220,840,220,720,220C600,220,480,220,360,220C240,220,120,220,60,220L0,220Z"></path>
+    </svg>
+  </div>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about" class="section s-about">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow-chip">Tentang Saya</span>
+        <h2>Seorang developer yang berpikir seperti <em>analis data</em> dan berkarya seperti <em>desainer</em></h2>
+        <p class="sec-sub">Membangun solusi digital yang tidak hanya berfungsi, tetapi benar-benar berdampak dan bermakna bagi penggunanya.</p>
+      </div>
+
+      <div class="about-unified">
+        <!-- Left Sidebar: Info Card & Principles -->
+        <div class="about-sidebar reveal-left">
+          <div class="an-photo-frame">
+            <img src="profile.png" alt="Foto Mufqi Andika Pangestu" class="an-photo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.an-photo-fb').style.display='flex';" />
+            <div class="an-photo-fb">MAP</div>
+            <div class="an-photo-badge">🎓 IPK 3.66 / 4.00</div>
+          </div>
+
+          <div class="an-info-card cinematic-card">
+            <div class="aic-title">Informasi Pribadi</div>
+            <div class="aic-rows">
+              <div class="aic-row"><span>Nama Lengkap</span><strong>Mufqi Andika Pangestu</strong></div>
+              <div class="aic-row"><span>Status</span><strong class="status-active">Mahasiswa Aktif</strong></div>
+              <div class="aic-row"><span>Universitas</span><strong>UHAMKA Jakarta</strong></div>
+              <div class="aic-row"><span>Program Studi</span><strong>S1 Sistem &amp; Teknologi Informasi</strong></div>
+              <div class="aic-row"><span>IPK</span><strong class="ipk-val">3.66 / 4.00</strong></div>
+              <div class="aic-row"><span>Domisili</span><strong>Jakarta Timur, DKI Jakarta</strong></div>
+              <div class="aic-row"><span>Email</span><strong>mufqi.andika@gmail.com</strong></div>
+              <div class="aic-row"><span>Telepon / WA</span><strong>+62 813-8288-7579</strong></div>
+              <div class="aic-row"><span>Bahasa</span><strong>Indonesia, Inggris (Aktif)</strong></div>
+              <div class="aic-row"><span>Remote Work</span><strong class="open-text">Terbuka ✓</strong></div>
+            </div>
+          </div>
+
+          <div class="an-values-card cinematic-card">
+            <div class="aic-title">Prinsip Kerja Saya</div>
+            <div class="avc-items">
+              <div class="avci"><span class="avci-num">01</span><p>Kode bersih lebih berharga daripada kode yang cepat ditulis</p></div>
+              <div class="avci"><span class="avci-num">02</span><p>Pengguna adalah kompas yang menentukan setiap keputusan desain</p></div>
+              <div class="avci"><span class="avci-num">03</span><p>Data adalah fondasi dari setiap keputusan bisnis yang baik</p></div>
+              <div class="avci"><span class="avci-num">04</span><p>Dokumentasi yang baik adalah bagian integral dari produk berkualitas</p></div>
+              <div class="avci"><span class="avci-num">05</span><p>Belajar tanpa henti bukan pilihan, melainkan kewajiban seorang developer</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content: Bio, Cards Grid, and Timeline -->
+        <div class="about-main reveal-right">
+          <div class="bio-text">
+            <h3>Halo, saya Mufqi! 👋</h3>
+            <p>Saya adalah mahasiswa S1 Sistem dan Teknologi Informasi di Universitas Muhammadiyah Prof. Dr. HAMKA (UHAMKA), Jakarta, dengan IPK 3.66/4.00. Passion saya yang mendalam adalah membangun solusi teknologi yang nyata, bermanfaat secara langsung bagi penggunanya, dan indah secara visual. Saya percaya bahwa teknologi tanpa keindahan adalah setengah jadi, dan keindahan tanpa fungsi adalah sia-sia.</p>
+            <p>Perjalanan saya dimulai dari rasa penasaran sederhana terhadap cara kerja aplikasi yang saya gunakan sehari-hari. Seiring waktu, rasa penasaran itu berkembang menjadi kemampuan komprehensif yang mencakup <strong>pengembangan aplikasi mobile dengan Flutter &amp; Dart</strong>, <strong>web development full-stack menggunakan Laravel dan CodeIgniter</strong>, <strong>manajemen database MySQL</strong>, hingga <strong>analisis data bisnis</strong> menggunakan SQL dan Excel yang menghasilkan insight yang actionable bagi pengambil keputusan.</p>
+            <p>Filosofi kerja saya sederhana namun kuat: kode yang baik adalah kode yang dapat dibaca, dipelihara, dan diskalakan oleh siapapun. Setiap proyek selalu dimulai dari pertanyaan <em>"Apa masalah nyata yang ingin dipecahkan?"</em> dan diakhiri dengan evaluasi <em>"Apakah pengguna mendapatkan pengalaman terbaik yang mungkin kita berikan?"</em> Proses di antaranya adalah iterasi, refleksi, dan dedikasi penuh terhadap kualitas.</p>
+          </div>
+
+          <!-- Highlight Core Cards (6 Cards Grid) -->
+          <div class="aoo-cards">
+            <div class="aoo-card hover-tilt cinematic-card">
+              <div class="aooc-num">01</div>
+              <div class="aooc-icon">🎓</div>
+              <h4>Latar Belakang Akademik</h4>
+              <p>S1 Sistem dan Teknologi Informasi, UHAMKA Jakarta, IPK 3.66/4.00. Kurikulum komprehensif mencakup rekayasa sistem, pengembangan perangkat lunak, basis data, IoT, e-business, dan sistem enterprise terdistribusi.</p>
+            </div>
+            <div class="aoo-card hover-tilt cinematic-card">
+              <div class="aooc-num">02</div>
+              <div class="aooc-icon">💻</div>
+              <h4>Keahlian Teknis Core</h4>
+              <p>Flutter mobile development, Laravel &amp; CodeIgniter web full-stack, MySQL database management, REST API integration, HTML/CSS/Bootstrap, JavaScript, Figma UI/UX, dan data analytics SQL &amp; Excel tingkat lanjut.</p>
+            </div>
+            <div class="aoo-card hover-tilt cinematic-card">
+              <div class="aooc-num">03</div>
+              <div class="aooc-icon">📊</div>
+              <h4>Visi Data Analytics</h4>
+              <p>Mengembangkan kompetensi data analytics sebagai diferensiator karir. Kombinasi kemampuan teknis developer (SQL, database design) dengan analytical thinking menciptakan profil profesional yang kompetitif.</p>
+            </div>
+            <div class="aoo-card hover-tilt cinematic-card">
+              <div class="aooc-num">04</div>
+              <div class="aooc-icon">🎨</div>
+              <h4>Pendekatan UI/UX</h4>
+              <p>Menerapkan prinsip User-Centered Design secara nyata dalam setiap proyek. Mendesain 3 proyek UI/UX Figma profesional yang mencakup fashion e-commerce, event ticketing, hingga wisata bahari Indonesia.</p>
+            </div>
+            <div class="aoo-card hover-tilt cinematic-card">
+              <div class="aooc-num">05</div>
+              <div class="aooc-icon">🚀</div>
+              <h4>Target 12 Bulan ke Depan</h4>
+              <p>Menguasai Python untuk data science (Pandas, NumPy, Matplotlib), membangun dashboard analytics interaktif Power BI, memahami machine learning, serta meraih sertifikasi data analytics industri.</p>
+            </div>
+            <div class="aoo-card hover-tilt cinematic-card">
+              <div class="aooc-num">06</div>
+              <div class="aooc-icon">🤝</div>
+              <h4>Peluang yang Dicari</h4>
+              <p>Terbuka untuk magang IT (mobile/web dev, data analyst, digital management), proyek freelance, kolaborasi startup teknologi, dan peluang networking dengan profesional industri.</p>
+            </div>
+          </div>
+
+          <!-- Vertical Timeline Stack -->
+          <div class="aot-timeline-col">
+            <h4>Timeline Perjalanan Pengembangan Diri</h4>
+            <div class="aot-tl">
+              <div class="aottl-item">
+                <div class="aottl-year">2023</div>
+                <div class="aottl-content hover-tilt cinematic-card">
+                  <strong>Mulai Studi S1 STI di UHAMKA</strong>
+                  <p>Mempelajari fondasi pemrograman, algoritma &amp; struktur data, basis data relasional, logika sistem informasi, jaringan komputer, dan pengenalan teknologi informasi modern.</p>
+                  <div class="aottl-tags"><span>Algoritma</span><span>Basis Data</span><span>Jaringan</span></div>
+                </div>
+              </div>
+              <div class="aottl-item">
+                <div class="aottl-year">2024</div>
+                <div class="aottl-content hover-tilt cinematic-card">
+                  <strong>Penguasaan Web Full-Stack</strong>
+                  <p>Mendalami CodeIgniter 3 dan Laravel secara intensif. Membangun Perfume E-Commerce Platform dan Video Viewer Website — memahami MVC, Eloquent ORM, autentikasi, dan REST API.</p>
+                  <div class="aottl-tags"><span>Laravel</span><span>CodeIgniter</span><span>MySQL</span><span>REST API</span></div>
+                </div>
+              </div>
+              <div class="aottl-item active">
+                <div class="aottl-year">2025 ●</div>
+                <div class="aottl-content hover-tilt cinematic-card">
+                  <strong>Mobile Dev, UI/UX &amp; Data Analytics</strong>
+                  <p>Ekspansi ke Flutter &amp; Dart — merampungkan Meals App dengan API integration. Menguasai Figma untuk 3 proyek UI/UX profesional. Memulai perjalanan serius dalam data analytics.</p>
+                  <div class="aottl-tags"><span>Flutter</span><span>Figma</span><span>Data Analysis</span><span>Digital Mgmt</span></div>
+                </div>
+              </div>
+              <div class="aottl-item future">
+                <div class="aottl-year">→ Next</div>
+                <div class="aottl-content hover-tilt cinematic-card">
+                  <strong>Python, BI Tools &amp; Karir Profesional</strong>
+                  <p>Menguasai Python (Pandas, NumPy, Matplotlib), membangun dashboard analytics interaktif, eksplorasi machine learning, open source contribution, dan meraih posisi profesional pertama.</p>
+                  <div class="aottl-tags"><span>Python</span><span>Power BI</span><span>ML Dasar</span><span>Professional</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAF CANOPY TRANSITION -->
+  <div class="section-divider sd-treeline">
+    <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+      <path class="morph-wave-1" fill="#ffffff" d="M0,96C180,160,360,160,540,128C720,96,900,32,1080,21.3C1260,11,1440,53,1500,74.7L1560,96L1560,180L1500,180C1440,180,1260,180,1080,180C900,180,720,180,540,180C360,180,180,180,0,180Z"></path>
+      <path class="morph-wave-2" fill="rgba(16, 185, 129, 0.04)" d="M0,120C240,80,480,160,720,130C960,100,1200,40,1440,90L1440,180L1200,180C960,180,720,180,480,180C240,180,0,180,0,180Z"></path>
+    </svg>
+  </div>
+
+  <!-- ============================================================
+       EDUCATION SECTION
+  ============================================================ -->
+  <section id="education" class="section s-education">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow-chip">Pendidikan Formal</span>
+        <h2>Fondasi akademik yang <em>kuat dan relevan</em> dengan kebutuhan industri teknologi</h2>
+        <p class="sec-sub">Kurikulum dirancang untuk melahirkan lulusan yang siap industri dengan pemahaman teknis dan manajerial yang seimbang dan komprehensif.</p>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-main reveal-left hover-tilt cinematic-card">
+          <div class="edm-badge">Sedang Berjalan · 2023 – Sekarang</div>
+          <div class="edm-uni">🏛️</div>
+          <h3>Universitas Muhammadiyah Prof. Dr. HAMKA</h3>
+          <p class="edm-prodi">S1 Sistem dan Teknologi Informasi</p>
+          <div class="edm-ipk-wrap">
+            <div class="edm-ipk-ring">
+              <svg viewBox="0 0 120 120" width="120" height="120">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(0,0,0,0.03)" stroke-width="8"/>
+                <circle cx="60" cy="60" r="50" fill="none" stroke="var(--c-primary)" stroke-width="8"
+                  stroke-dasharray="314" stroke-dashoffset="26"
+                  stroke-linecap="round" transform="rotate(-90 60 60)" id="ipkCircle"/>
+              </svg>
+              <div class="edm-ipk-text"><strong>3.66</strong><small>/4.00</small></div>
+            </div>
+            <div class="edm-ipk-desc">
+              <h4>Indeks Prestasi Kumulatif</h4>
+              <p>Mempertahankan prestasi akademik tinggi dengan kurikulum komprehensif yang mencakup rekayasa sistem, pengembangan perangkat lunak, basis data, analitik data, IoT, e-business, dan sistem enterprise.</p>
+              <p class="edm-pred">Predikat: <em>Sangat Memuaskan</em></p>
+            </div>
+          </div>
+          <a href="CVMufqiAndikaPangestu.pdf" download class="btn-primary w-full">⬇ Download CV Lengkap</a>
+        </div>
+        
+        <div class="edu-courses reveal-right">
+          <h3>Mata Kuliah Relevan Industri</h3>
+          <p>Kurikulum yang dirancang untuk mempersiapkan lulusan yang siap berkontribusi langsung di industri teknologi Indonesia dan global.</p>
+          <div class="ec-list">
+            <div class="ec-item hover-tilt cinematic-card"><span class="eci-icon">🗄️</span><div><strong>Sistem Basis Data &amp; Praktikum</strong><small>Desain ERD, normalisasi 1NF–3NF, SQL query tingkat lanjut, MySQL, stored procedure, trigger, indexing, optimasi performa query, backup &amp; restore database.</small></div></div>
+            <div class="ec-item hover-tilt cinematic-card"><span class="eci-icon">📐</span><div><strong>Struktur Data &amp; Algoritma</strong><small>Array, linked list, stack, queue, tree, graph, sorting algorithms (quick, merge, heap), searching algorithms, kompleksitas waktu &amp; ruang Big-O.</small></div></div>
+            <div class="ec-item hover-tilt cinematic-card"><span class="eci-icon">📊</span><div><strong>Analisis &amp; Perancangan Sistem Informasi</strong><small>Use case diagram, DFD, flowchart, entity relationship diagram, system requirement specification (SRS), analisis kebutuhan fungsional &amp; non-fungsional.</small></div></div>
+            <div class="ec-item hover-tilt cinematic-card"><span class="eci-icon">🔄</span><div><strong>Metodologi Pengembangan Sistem Informasi</strong><small>Waterfall, agile methodology, scrum framework, SDLC, sprint planning, backlog management, iterative development, testing &amp; deployment strategy.</small></div></div>
+            <div class="ec-item hover-tilt cinematic-card"><span class="eci-icon">💻</span><div><strong>Pemrograman Web</strong><small>HTML5 semantik, CSS3 &amp; animasi, PHP OOP, JavaScript &amp; DOM, framework web (Laravel, CodeIgniter), REST API design, MVC pattern, autentikasi &amp; otorisasi.</small></div></div>
+            <div class="ec-item hover-tilt cinematic-card"><span class="eci-icon">📱</span><div><strong>Mobile Application Development</strong><small>Flutter framework, Dart programming, cross-platform development, Material Design 3, widget lifecycle, state management, API integration, publish ke Play Store.</small></div></div>
+            <div class="ec-item hover-tilt cinematic-card"><span class="eci-icon">🌐</span><div><strong>E-Business &amp; Digital Commerce</strong><small>Model bisnis digital, platform e-commerce, digital payment gateway, strategi pemasaran online, SEO dasar, analitik web, conversion optimization.</small></div></div>
+            <div class="ec-item hover-tilt cinematic-card"><span class="eci-icon">🏢</span><div><strong>Sistem Enterprise Terdistribusi</strong><small>ERP systems, microservices architecture, SOA (Service Oriented Architecture), distributed computing, load balancing, sistem informasi terintegrasi enterprise-scale.</small></div></div>
+            <div class="ec-item hover-tilt cinematic-card"><span class="eci-icon">💰</span><div><strong>Sistem Informasi Akuntansi</strong><small>SIA, siklus akuntansi digital, laporan keuangan berbasis IT, audit sistem informasi, pengendalian internal berbasis IT, COSO framework.</small></div></div>
+            <div class="ec-item hover-tilt cinematic-card"><span class="eci-icon">🔌</span><div><strong>Internet of Things (IoT)</strong><small>Sensor &amp; aktuator, Arduino &amp; ESP32, protokol MQTT, HTTP untuk IoT, smart device connectivity, edge computing dasar, prototype IoT sederhana.</small></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROLLING HILLS TRANSITION -->
+  <div class="section-divider sd-hills">
+    <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+      <path class="morph-wave-1" fill="#faf8f2" d="M0,32L80,53.3C160,75,320,117,480,128C640,139,800,117,960,101.3C1120,85,1280,75,1360,69.3L1440,64L1440,180L1360,180C1280,180,1120,180,960,180C800,180,640,180,480,180C320,180,160,180,80,180L0,180Z"></path>
+      <path class="morph-wave-2" fill="rgba(122, 158, 126, 0.04)" d="M0,64C200,120,400,40,600,80C800,120,1000,140,1200,90L1440,64L1440,180L1200,180C1000,180,800,180,600,180C400,180,200,180,0,180Z"></path>
+    </svg>
+  </div>
+
+  <!-- ============================================================
+       SKILLS SECTION (Unified Dashboard Layout)
+  ============================================================ -->
+  <section id="skills" class="section s-skills">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow-chip">Keahlian &amp; Kompetensi</span>
+        <h2>Spektrum kemampuan yang <em>terus berkembang</em> setiap hari</h2>
+        <p class="sec-sub">Dari pengembangan mobile dan web hingga analisis data dan desain UI/UX — kemampuan yang saling melengkapi untuk menghadirkan solusi digital yang holistik.</p>
+      </div>
+
+      <div class="skills-unified">
+        <!-- Left: Progress Bars & Group Badges -->
+        <div class="skills-left reveal-left">
+          <div class="skn-block cinematic-card">
+            <div class="skn-head"><span>📱</span><div><h3>Mobile Development</h3><p>Aplikasi mobile cross-platform yang performan, estetik, dan kaya fitur</p></div></div>
+            <div class="skn-bars">
+              <div class="sknb"><div class="sknb-top"><span>Flutter (Dart)</span><span class="sknb-pct">83%</span><span class="sknb-lv adv">Advanced</span></div><div class="sknb-track"><div class="sknb-fill" data-w="83"></div></div><p>State management, widget lifecycle, HTTP package, animasi, responsive layout, integrasi REST API, error handling.</p></div>
+              <div class="sknb"><div class="sknb-top"><span>REST API Integration</span><span class="sknb-pct">80%</span><span class="sknb-lv adv">Advanced</span></div><div class="sknb-track"><div class="sknb-fill" data-w="80"></div></div><p>Konsumsi API custom, JSON serialization, token authentication dengan interceptors, caching data lokal.</p></div>
+              <div class="sknb"><div class="sknb-top"><span>Mobile UI/UX — Material Design</span><span class="sknb-pct">76%</span><span class="sknb-lv mid">Intermediate</span></div><div class="sknb-track"><div class="sknb-fill" data-w="76"></div></div><p>Material Design 3, custom widget development, animasi page transition, dark/light mode support.</p></div>
+            </div>
+          </div>
+
+          <div class="skn-block cinematic-card">
+            <div class="skn-head"><span>🌐</span><div><h3>Web Development (Full-Stack)</h3><p>Membangun aplikasi web end-to-end yang terstruktur, aman, dan scalable</p></div></div>
+            <div class="skn-bars">
+              <div class="sknb"><div class="sknb-top"><span>HTML5 &amp; CSS3</span><span class="sknb-pct">87%</span><span class="sknb-lv adv">Advanced</span></div><div class="sknb-track"><div class="sknb-fill" data-w="87"></div></div><p>Semantic HTML5, Flexbox &amp; Grid, CSS variables, CSS transition/animasi, responsive design.</p></div>
+              <div class="sknb"><div class="sknb-top"><span>Laravel (PHP)</span><span class="sknb-pct">81%</span><span class="sknb-lv adv">Advanced</span></div><div class="sknb-track"><div class="sknb-fill" data-w="81"></div></div><p>Eloquent ORM, Blade template, Artisan CLI, routing/middleware, Breeze/Sanctum, form validation.</p></div>
+              <div class="sknb"><div class="sknb-top"><span>CodeIgniter 3/4 (PHP)</span><span class="sknb-pct">79%</span><span class="sknb-lv adv">Advanced</span></div><div class="sknb-track"><div class="sknb-fill" data-w="79"></div></div><p>MVC pattern, Active Record, session management, custom helper/library, HMVC structure.</p></div>
+              <div class="sknb"><div class="sknb-top"><span>Bootstrap 4 &amp; 5</span><span class="sknb-pct">84%</span><span class="sknb-lv adv">Advanced</span></div><div class="sknb-track"><div class="sknb-fill" data-w="84"></div></div><p>Grid system, component library, custom tema via Sass variables, integrasi backend.</p></div>
+              <div class="sknb"><div class="sknb-top"><span>JavaScript — Vanilla &amp; jQuery</span><span class="sknb-pct">71%</span><span class="sknb-lv mid">Intermediate</span></div><div class="sknb-track"><div class="sknb-fill" data-w="71"></div></div><p>DOM manipulation, event handling, Fetch API, async/await, form validation, jQuery logic.</p></div>
+            </div>
+          </div>
+
+          <div class="skn-block cinematic-card">
+            <div class="skn-head"><span>🗄️</span><div><h3>Database Management</h3><p>Perancangan, implementasi, dan optimasi sistem basis data relasional</p></div></div>
+            <div class="skn-bars">
+              <div class="sknb"><div class="sknb-top"><span>MySQL</span><span class="sknb-pct">84%</span><span class="sknb-lv adv">Advanced</span></div><div class="sknb-track"><div class="sknb-fill" data-w="84"></div></div><p>Desain skema, normalisasi 1NF-3NF, complex JOIN queries, subquery, stored procedure, trigger, indexing.</p></div>
+              <div class="sknb"><div class="sknb-top"><span>SQL Analytical Queries</span><span class="sknb-pct">73%</span><span class="sknb-lv mid">Intermediate</span></div><div class="sknb-track"><div class="sknb-fill" data-w="73"></div></div><p>Agregasi data (GROUP BY, HAVING, nested function), trends analysis, window functions, CTE.</p></div>
+            </div>
+          </div>
+
+          <div class="skills-teal">
+            <div class="skt-group cinematic-card">
+              <div class="sktg-header"><span class="sktg-num">01</span><div><h3>Mobile Dev</h3></div></div>
+              <div class="sktg-tags">
+                <span class="skt-tag expert">Flutter</span><span class="skt-tag expert">Dart</span><span class="skt-tag expert">API Int</span><span class="skt-tag mid">Material 3</span><span class="skt-tag mid">State Mgmt</span>
+              </div>
+            </div>
+            <div class="skt-group cinematic-card">
+              <div class="sktg-header"><span class="sktg-num">02</span><div><h3>Web Dev</h3></div></div>
+              <div class="sktg-tags">
+                <span class="skt-tag expert">Laravel</span><span class="skt-tag expert">CI 3</span><span class="skt-tag expert">HTML/CSS</span><span class="skt-tag expert">Bootstrap</span><span class="skt-tag mid">JS</span>
+              </div>
+            </div>
+            <div class="skt-group cinematic-card">
+              <div class="sktg-header"><span class="sktg-num">03</span><div><h3>Data Stack</h3></div></div>
+              <div class="sktg-tags">
+                <span class="skt-tag expert">MySQL</span><span class="skt-tag expert">SQL Anal</span><span class="skt-tag mid">phpMyAdmin</span><span class="skt-tag mid">Excel</span><span class="skt-tag learn">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Icon Grid, Tools & Soft Skills -->
+        <div class="skills-right reveal-right">
+          <div class="sko-grid">
+            <div class="sko-item cinematic-card"><div class="skoi-icon">📱</div><h4>Flutter &amp; Dart</h4><p>Aplikasi mobile cross-platform performan, state management &amp; API integration.</p><span class="skoi-badge adv">Advanced · 83%</span></div>
+            <div class="sko-item cinematic-card"><div class="skoi-icon">🌐</div><h4>Laravel PHP</h4><p>Web app development full-stack dengan Eloquent, Blade, autentikasi, &amp; REST API.</p><span class="skoi-badge adv">Advanced · 81%</span></div>
+            <div class="sko-item cinematic-card"><div class="skoi-icon">⚙️</div><h4>CodeIgniter</h4><p>Platform web PHP dengan MVC, Active Record, session, dan HMVC scale.</p><span class="skoi-badge adv">Advanced · 79%</span></div>
+            <div class="sko-item cinematic-card"><div class="skoi-icon">🗄️</div><h4>MySQL Database</h4><p>Desain skema, normalisasi, stored procedure, indexing, optimasi performa query.</p><span class="skoi-badge adv">Advanced · 84%</span></div>
+            <div class="sko-item cinematic-card"><div class="skoi-icon">🎨</div><h4>Figma UI/UX</h4><p>Wireframing, interactive prototyping, design system, component reusable, handoff.</p><span class="skoi-badge mid">Intermediate · 73%</span></div>
+            <div class="sko-item cinematic-card"><div class="skoi-icon">📊</div><h4>Data Analytics</h4><p>SQL analytical queries, Excel advanced, pivot tables, visualization, reports.</p><span class="skoi-badge mid">Intermediate · 71%</span></div>
+            <div class="sko-item cinematic-card"><div class="skoi-icon">🔗</div><h4>REST API</h4><p>Desain, konsumsi, dan integrasi REST API dengan token auth, error handling.</p><span class="skoi-badge adv">Advanced · 80%</span></div>
+            <div class="sko-item cinematic-card"><div class="skoi-icon">🧰</div><h4>Bootstrap</h4><p>Grid system, component library, utilitas classes, sass customizer.</p><span class="skoi-badge adv">Advanced · 84%</span></div>
+            <div class="sko-item cinematic-card"><div class="skoi-icon">📝</div><h4>HTML5 &amp; CSS3</h4><p>Semantic markup, Flexbox &amp; Grid, animasi CSS, custom properties, responsive.</p><span class="skoi-badge adv">Advanced · 87%</span></div>
+            <div class="sko-item cinematic-card"><div class="skoi-icon">⚡</div><h4>JavaScript</h4><p>DOM manipulation, Fetch API, async/await, interactive validation, jQuery logic.</p><span class="skoi-badge mid">Intermediate · 71%</span></div>
+            <div class="sko-item cinematic-card"><div class="skoi-icon">📈</div><h4>Excel Advanced</h4><p>Pivot Table/Chart, VLOOKUP/XLOOKUP, INDEX-MATCH, reporting dashboard, validation.</p><span class="skoi-badge mid">Intermediate · 74%</span></div>
+            <div class="sko-item cinematic-card"><div class="skoi-icon">🐙</div><h4>Git &amp; GitHub</h4><p>Version control, branch management, pull request, commit structure, kolaborasi.</p><span class="skoi-badge mid">Intermediate · 70%</span></div>
+          </div>
+
+          <div class="sko-tools cinematic-card">
+            <h3>Tools &amp; Environment</h3>
+            <div class="skot-items">
+              <div class="skot-i"><span>⚡</span><strong>VS Code</strong></div>
+              <div class="skot-i"><span>🐬</span><strong>phpMyAdmin</strong></div>
+              <div class="skot-i"><span>🖥️</span><strong>XAMPP / LAMP</strong></div>
+              <div class="skot-i"><span>📬</span><strong>Postman</strong></div>
+              <div class="skot-i"><span>📝</span><strong>Microsoft Word</strong></div>
+              <div class="skot-i"><span>📊</span><strong>Microsoft Excel</strong></div>
+              <div class="skot-i"><span>🎨</span><strong>Figma</strong></div>
+              <div class="skot-i"><span>🐙</span><strong>Git &amp; GitHub</strong></div>
+            </div>
+          </div>
+
+          <div class="sko-soft cinematic-card">
+            <h3>Soft Skills</h3>
+            <div class="skos-tags">
+              <span>Analytical Thinking</span><span>Problem Solving</span><span>Team Collaboration</span><span>Time Management</span><span>Adaptability &amp; Fast Learning</span><span>Attention to Detail</span><span>Komunikasi Efektif</span><span>Inisiatif &amp; Proaktif</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOWING RIVER TRANSITION -->
+  <div class="section-divider sd-river">
+    <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
+      <path class="morph-wave-1" fill="#f5f0e8" d="M0,64 C120,40 240,160 360,140 C480,120 600,20 720,40 C840,60 960,180 1080,160 C1200,140 1320,40 1440,64 L1440,200 L0,200 Z"></path>
+      <path class="morph-wave-2" fill="rgba(74, 144, 164, 0.04)" d="M0,80 C200,20 400,180 600,120 C800,60 1000,120 1200,100 L1440,80 L1440,200 L0,200 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section id="projects" class="section s-projects">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow-chip">Portfolio Proyek</span>
+        <h2>Karya nyata yang dibangun dengan <em>dedikasi penuh</em> dan perhatian pada setiap detail</h2>
+        <p class="sec-sub">Setiap proyek adalah representasi dari kemampuan teknis, kreativitas desain, dan pemahaman terhadap kebutuhan pengguna yang nyata.</p>
+      </div>
+
+      <div class="proj-filter reveal">
+        <button class="pf-btn active" data-filter="all">Semua Proyek</button>
+        <button class="pf-btn" data-filter="mobile">📱 Mobile App</button>
+        <button class="pf-btn" data-filter="web">🌐 Web App</button>
+        <button class="pf-btn" data-filter="uiux">🎨 UI/UX Design</button>
+      </div>
+
+      <div class="projects-natural">
+        <div class="pjn-grid">
+          <!-- Card 1: Meals App -->
+          <div class="pjn-card reveal hover-tilt cinematic-card" data-cat="mobile">
+            <div class="pjnc-top">
+              <img src="meals1.jpg" alt="Meals App Screenshot" class="pjnc-img" onerror="this.parentElement.style.background='linear-gradient(135deg, var(--c-primary), var(--c-accent))'; this.style.display='none'; this.parentElement.querySelector('.pjnc-img-fallback').style.display='flex';" />
+              <div class="pjnc-img-fallback">📱</div>
+              <div class="pjnc-type-badge">Flutter · Mobile App</div>
+            </div>
+            <div class="pjnc-body">
+              <div class="pjnc-meta"><span class="pjnc-year">2025</span></div>
+              <h3>Meals &amp; International Food App</h3>
+              <p>Aplikasi mobile Flutter untuk menampilkan ribuan resep makanan lokal dan internasional dengan data real-time dari REST API. Dibangun dengan arsitektur yang bersih dan performa optimal, aplikasi ini menawarkan pengalaman browsing resep yang menyenangkan dan informatif. Fitur pencarian cerdas dengan debounce, filter multi-kategori (Asia, Eropa, Amerika, Mediterania, dll), detail resep lengkap (bahan, langkah memasak, informasi nutrisi, video tutorial), dan antarmuka yang responsif dengan animasi transisi yang halus di berbagai ukuran perangkat.</p>
+              <div class="pjnc-features">
+                <h4>Fitur Utama:</h4>
+                <ul>
+                  <li>REST API integration dengan data caching lokal</li>
+                  <li>Pencarian real-time dengan debounce optimization</li>
+                  <li>Filter kategori masakan multi-dimensi (10+ kategori)</li>
+                  <li>Detail resep: bahan, langkah, nutrisi, &amp; video</li>
+                  <li>UI responsif dengan animasi page transition halus</li>
+                  <li>Error handling &amp; empty state yang informatif</li>
+                </ul>
+              </div>
+              <div class="pjnc-stack"><span>Flutter</span><span>Dart</span><span>REST API</span><span>HTTP Package</span><span>State Mgmt</span><span>Material Design</span></div>
+            </div>
+          </div>
+
+          <!-- Card 2: Perfume App -->
+          <div class="pjn-card reveal hover-tilt cinematic-card" data-cat="web">
+            <div class="pjnc-top">
+              <img src="perfume1.jpg" alt="Perfume E-Commerce Screenshot" class="pjnc-img" onerror="this.parentElement.style.background='linear-gradient(135deg, var(--c-secondary), var(--c-primary))'; this.style.display='none'; this.parentElement.querySelector('.pjnc-img-fallback').style.display='flex';" />
+              <div class="pjnc-img-fallback">🛒</div>
+              <div class="pjnc-type-badge">CodeIgniter · Web App</div>
+            </div>
+            <div class="pjnc-body">
+              <div class="pjnc-meta"><span class="pjnc-year">2025</span></div>
+              <h3>Perfume E-Commerce Application</h3>
+              <p>Platform e-commerce lengkap dan profesional untuk penjualan parfum premium dengan CodeIgniter 3 dan MySQL. Sistem ini mencakup dua modul utama: front-end toko pelanggan yang elegan dan back-end panel admin yang komprehensif. Pelanggan dapat memfilter produk berdasarkan merek, kategori aroma, dan range harga; melihat galeri foto multi-gambar; menambahkan ke keranjang; dan melakukan checkout. Admin dapat mengelola produk, kategori, pesanan, pengguna, and melihat laporan transaksi secara real-time.</p>
+              <div class="pjnc-features">
+                <h4>Fitur Utama:</h4>
+                <ul>
+                  <li>Katalog produk dengan filter &amp; pencarian lanjutan</li>
+                  <li>Galeri foto produk multi-gambar dengan preview</li>
+                  <li>Keranjang belanja, wishlist &amp; checkout terintegrasi</li>
+                  <li>Panel admin CRUD produk, kategori &amp; pesanan</li>
+                  <li>Manajemen pengguna &amp; role-based authentication</li>
+                  <li>Laporan transaksi &amp; monitoring penjualan</li>
+                </ul>
+              </div>
+              <div class="pjnc-stack"><span>CodeIgniter 3</span><span>PHP</span><span>MySQL</span><span>Bootstrap 4</span><span>jQuery</span><span>phpMyAdmin</span></div>
+            </div>
+          </div>
+
+          <!-- Card 3: Video Streaming App -->
+          <div class="pjn-card reveal hover-tilt cinematic-card" data-cat="web">
+            <div class="pjnc-top">
+              <img src="videostreaming.jpg" alt="Video Streaming Screenshot" class="pjnc-img" onerror="this.parentElement.style.background='linear-gradient(135deg, var(--c-accent), var(--c-primary))'; this.style.display='none'; this.parentElement.querySelector('.pjnc-img-fallback').style.display='flex';" />
+              <div class="pjnc-img-fallback">🎬</div>
+              <div class="pjnc-type-badge">Laravel · Web App</div>
+            </div>
+            <div class="pjnc-body">
+              <div class="pjnc-meta"><span class="pjnc-year">2025</span></div>
+              <h3>Simple Video Viewer Website</h3>
+              <p>Website streaming video berbasis Laravel dengan CMS (Content Management System) terintegrasi yang memungkinkan pengelolaan konten video secara mandiri. Dibangun dengan arsitektur MVC yang bersih — logika bisnis, presentasi, dan data terpisah dengan baik. Admin dapat mengunggah video, mengelola metadata (judul, deskripsi, thumbnail, kategori), mengatur visibilitas, dan memantau statistik penonton. Pengguna terautentikasi dapat streaming video langsung di browser dengan player HTML5 yang responsif.</p>
+              <div class="pjnc-features">
+                <h4>Fitur Utama:</h4>
+                <ul>
+                  <li>Video streaming dari server storage via HTML5 player</li>
+                  <li>CRUD manajemen video oleh admin (upload, edit, hapus)</li>
+                  <li>Role-based authentication — user &amp; admin role</li>
+                  <li>Routing &amp; middleware terstruktur dengan Laravel</li>
+                  <li>Blade template engine untuk tampilan dinamis</li>
+                  <li>Eloquent ORM untuk manajemen data yang efisien</li>
+                </ul>
+              </div>
+              <div class="pjnc-stack"><span>Laravel 9+</span><span>PHP</span><span>MySQL</span><span>Blade</span><span>Eloquent ORM</span><span>Bootstrap</span></div>
+            </div>
+          </div>
+
+          <!-- Card 4: Trendy Wear UI/UX -->
+          <div class="pjn-card reveal hover-tilt cinematic-card" data-cat="uiux">
+            <div class="pjnc-top">
+              <img src="wear.jpg" alt="Trendy Wear UI/UX Design" class="pjnc-img" onerror="this.parentElement.style.background='linear-gradient(135deg, #C27A5A, #8A9A5B)'; this.style.display='none'; this.parentElement.querySelector('.pjnc-img-fallback').style.display='flex';" />
+              <div class="pjnc-img-fallback">👗</div>
+              <div class="pjnc-type-badge">Figma · UI/UX Design</div>
+            </div>
+            <div class="pjnc-body">
+              <div class="pjnc-meta"><span class="pjnc-year">2025</span></div>
+              <h3>Trendy Wear — Fashion Website UI/UX</h3>
+              <p>Desain UI/UX komprehensif untuk platform fashion e-commerce yang menargetkan millennial urban Indonesia. Proyek dimulai dari riset kompetitor mendalam, pembuatan user persona, pemetaan information architecture, wireframe low-fidelity, hingga high-fidelity mockup yang detail dan prototype interaktif penuh. Design system konsisten dengan komponen reusable, tipografi hierarkis, dan palet warna yang kohesif. Prototype mencakup alur lengkap dari landing page hingga konfirmasi pesanan.</p>
+              <div class="pjnc-features">
+                <h4>Deliverables:</h4>
+                <ul>
+                  <li>User persona &amp; user flow komprehensif (20+ screens)</li>
+                  <li>Wireframe low-fidelity untuk semua halaman utama</li>
+                  <li>High-fidelity mockup dengan design system lengkap</li>
+                  <li>Prototype interaktif full shopping flow</li>
+                  <li>Component library yang reusable &amp; terdokumentasi</li>
+                  <li>Style guide: tipografi, warna, spacing, &amp; iconografi</li>
+                </ul>
+              </div>
+              <div class="pjnc-stack"><span>Figma</span><span>UI Design</span><span>Wireframing</span><span>Prototyping</span><span>Design System</span><span>User Research</span></div>
+            </div>
+          </div>
+
+          <!-- Card 5: Event Ticketing UI/UX -->
+          <div class="pjn-card reveal hover-tilt cinematic-card" data-cat="uiux">
+            <div class="pjnc-top">
+              <img src="event-ticketing.jpg" alt="Event Ticketing UI/UX Design" class="pjnc-img" onerror="this.parentElement.style.background='linear-gradient(135deg, #4A6FA5, #C9A66B)'; this.style.display='none'; this.parentElement.querySelector('.pjnc-img-fallback').style.display='flex';" />
+              <div class="pjnc-img-fallback">🎟️</div>
+              <div class="pjnc-type-badge">Figma · UI/UX Design</div>
+            </div>
+            <div class="pjnc-body">
+              <div class="pjnc-meta"><span class="pjnc-year">2025</span></div>
+              <h3>Event &amp; Ticketing Platform</h3>
+              <p>Platform digital pembelian tiket acara (konser, seminar, festival, pameran, olahraga) yang dioptimalkan untuk minimal friction dalam proses booking. Progress indicator yang jelas, form multi-step yang ringkas, and konfirmasi visual di setiap tahapan memastikan pengguna tidak pernah merasa tersesat. Fitur unggulan: seat map interaktif dengan real-time availability yang menunjukkan kursi yang tersedia dan sudah terjual, countdown untuk limited seats, e-ticket QR code digital, dan My Tickets dashboard.</p>
+              <div class="pjnc-features">
+                <h4>Fitur yang Didesain:</h4>
+                <ul>
+                  <li>Discovery &amp; filter acara multi-kategori dengan map view</li>
+                  <li>Interactive seat map real-time dengan color coding</li>
+                  <li>Multi-step booking dengan progress indicator jelas</li>
+                  <li>E-ticket QR code digital yang dapat diunduh</li>
+                  <li>My Tickets dashboard &amp; booking history lengkap</li>
+                  <li>Notifikasi &amp; event reminder otomatis</li>
+                </ul>
+              </div>
+              <div class="pjnc-stack"><span>Figma</span><span>Prototyping</span><span>Interaction Design</span><span>UI Design</span><span>User Research</span></div>
+            </div>
+          </div>
+
+          <!-- Card 6: Phinisi UI/UX -->
+          <div class="pjn-card reveal hover-tilt cinematic-card" data-cat="uiux">
+            <div class="pjnc-top">
+              <img src="phinisi.jpg" alt="Phinisi Ticketing App Design" class="pjnc-img" onerror="this.parentElement.style.background='linear-gradient(135deg, #3A8D8F, #D8C3A5)'; this.style.display='none'; this.parentElement.querySelector('.pjnc-img-fallback').style.display='flex';" />
+              <div class="pjnc-img-fallback">⛵</div>
+              <div class="pjnc-type-badge">Figma · UI/UX Design</div>
+            </div>
+            <div class="pjnc-body">
+              <div class="pjnc-meta"><span class="pjnc-year">2025</span></div>
+              <h3>Pemesanan Tiket Pariwisata Phinisi</h3>
+              <p>Aplikasi mobile pemesanan tiket wisata kapal Phinisi — ikon maritim Indonesia yang membanggakan. Estetika desain menggabungkan keindahan visual budaya Bugis-Makassar dengan pengalaman pengguna modern yang intuitif. Pengguna dapat memilih rute laut (Labuan Bajo, Raja Ampat, Kepulauan Seribu), melihat jadwal keberangkatan, memilih paket wisata (day trip atau multi-hari dengan akomodasi kabin), melihat galeri destinasi yang memukau, membaca ulasan wisatawan, dan mendapatkan panduan wisata digital terintegrasi.</p>
+              <div class="pjnc-features">
+                <h4>Fitur yang Didesain:</h4>
+                <ul>
+                  <li>Pemilihan rute &amp; destinasi wisata laut interaktif</li>
+                  <li>Kalender jadwal keberangkatan &amp; ketersediaan kabin</li>
+                  <li>Paket wisata day trip &amp; multi-hari dengan detail lengkap</li>
+                  <li>Pilihan jenis kabin &amp; fasilitas kapal yang tersedia</li>
+                  <li>Sistem ulasan, rating &amp; galeri foto wisatawan</li>
+                  <li>Panduan wisata &amp; itinerary digital terintegrasi</li>
+                </ul>
+              </div>
+              <div class="pjnc-stack"><span>Figma</span><span>Mobile UI</span><span>Travel UX</span><span>Cultural Design</span><span>Prototyping</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOUD LAYER TRANSITION -->
+  <div class="section-divider sd-clouds">
+    <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+      <path class="morph-wave-1" fill="#faf8f2" d="M0,128 C150,96 350,160 500,128 C650,96 800,64 950,96 C1100,128 1300,96 1440,128 L1440,180 L0,180 Z"></path>
+      <path class="morph-wave-2" fill="rgba(255, 255, 255, 0.4)" d="M0,140 C200,110 450,170 650,130 C850,90 1100,150 1440,120 L1440,180 L0,180 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ============================================================
+       SECTION 6 — DATA & DIGITAL
+  ============================================================ -->
+  <section id="data" class="section s-data">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow-chip">Data Analytics &amp; Manajemen Digital</span>
+        <h2>Lebih dari sekadar developer — <em>seorang pemikir berbasis data</em> yang memahami bisnis secara menyeluruh</h2>
+        <p class="sec-sub">Di era transformasi digital, kemampuan membangun sistem saja tidak cukup. Dibutuhkan profesional yang mampu mengekstrak nilai dari data dan mengelola operasional digital secara strategis.</p>
+      </div>
+      
+      <div class="data-layout">
+        <div class="data-story reveal">
+          <h3>Mengapa Data Analytics Menjadi Prioritas Strategis Saya?</h3>
+          <p>Organisasi modern tidak hanya membutuhkan sistem yang berfungsi — mereka membutuhkan profesional yang mampu memahami <em>apa yang terjadi di dalam sistem</em>. Menganalisis perilaku pengguna, mengidentifikasi tren bisnis yang tersembunyi, mendeteksi anomali operasional, dan menghasilkan rekomendasi yang actionable dari tumpukan data mentah. Inilah gap yang ingin saya isi.</p>
+          <p>Sebagai mahasiswa Sistem dan Teknologi Informasi, saya secara strategis mengembangkan kompetensi data analytics sebagai diferensiator karir yang kuat. Kombinasi antara kemampuan teknis developer — terutama dalam SQL, desain database, dan pembangunan sistem — dengan kemampuan analitis yang meliputi interpretasi data, statistical thinking, dan pemahaman bisnis, menciptakan profil profesional yang kompetitif.</p>
+          <p>Target konkret saya dalam 12 bulan ke depan: menguasai <strong>Python untuk data analysis</strong> dengan library Pandas, NumPy, dan Matplotlib; membangun <strong>dashboard analytics interaktif</strong> pertama menggunakan Power BI atau Tableau; memahami prinsip dasar machine learning dan predictive modeling; dan mendapatkan <strong>sertifikasi data analytics</strong> yang relevan dan diakui industri.</p>
+          
+          <div class="data-bars">
+            <div class="db-row"><span>SQL Analytics</span><div class="db-track"><div class="db-fill" data-w="72"></div></div><i>72%</i></div>
+            <div class="db-row"><span>Excel Advanced</span><div class="db-track"><div class="db-fill" data-w="74"></div></div><i>74%</i></div>
+            <div class="db-row"><span>Data Visualization</span><div class="db-track"><div class="db-fill" data-w="55"></div></div><i>55% ↑</i></div>
+            <div class="db-row"><span>Business Process Analysis</span><div class="db-track"><div class="db-fill" data-w="68"></div></div><i>68%</i></div>
+            <div class="db-row"><span>Reporting &amp; Documentation</span><div class="db-track"><div class="db-fill" data-w="71"></div></div><i>71%</i></div>
+          </div>
+        </div>
+        
+        <div class="data-cards-col">
+          <div class="dcc reveal hover-tilt cinematic-card"><div class="dcci">🔍</div><h4>Eksplorasi &amp; Analisis Data</h4><p>Mengekstrak, mengolah, dan menganalisis dataset menggunakan SQL lanjutan dan Excel untuk menemukan pola tersembunyi, tren bisnis yang signifikan, dan anomali operasional yang memerlukan perhatian segera dari manajemen.</p><div class="dcc-tags"><span>SQL Analytics</span><span>Pivot Table</span><span>Pattern Recognition</span></div></div>
+          <div class="dcc reveal hover-tilt cinematic-card"><div class="dcci">📋</div><h4>Pelaporan Bisnis Terstruktur</h4><p>Menyusun laporan analisis yang mengkomunikasikan insight data secara jelas dan persuasif kepada audiens teknis maupun non-teknis, dengan visualisasi yang tepat sasaran untuk mendukung pengambilan keputusan strategis.</p><div class="dcc-tags"><span>Data Reporting</span><span>MS Word &amp; Excel</span><span>Data Storytelling</span></div></div>
+          <div class="dcc reveal hover-tilt cinematic-card"><div class="dcci">⚙️</div><h4>Analisis Proses Bisnis</h4><p>Memetakan alur kerja organisasi secara menyeluruh, mengidentifikasi bottleneck dan inefisiensi operasional, mengukur efisiensi proses melalui KPI, dan merekomendasikan perbaikan berbasis data untuk meningkatkan produktivitas.</p><div class="dcc-tags"><span>Business Analysis</span><span>KPI Metrics</span><span>Process Mapping</span></div></div>
+          <div class="dcc reveal hover-tilt cinematic-card"><div class="dcci">🗂️</div><h4>Manajemen Proyek Digital</h4><p>Mengelola lifecycle proyek teknologi dari inisiasi hingga delivery — mendefinisikan scope, menyusun timeline, mengalokasikan resources, mengelola risiko, dan mengkoordinasikan tim multidisiplin untuk menghasilkan deliverable tepat waktu.</p><div class="dcc-tags"><span>Project Planning</span><span>Agile/Scrum</span><span>Stakeholder Mgmt</span></div></div>
+          <div class="dcc reveal hover-tilt cinematic-card"><div class="dcci">📱</div><h4>Manajemen Konten Digital</h4><p>Pengelolaan aset digital secara sistematis, pemeliharaan konsistensi konten di berbagai platform digital, workflow produksi konten yang efisien, dan koordinasi publikasi dalam lingkungan kerja yang dinamis.</p><div class="dcc-tags"><span>Content Management</span><span>Digital Assets</span><span>Workflow Optimization</span></div></div>
+          <div class="dcc dcc-target reveal hover-tilt cinematic-card"><div class="dcci">🎯</div><h4>Target: Python &amp; BI Tools</h4><p>Aktif belajar Python (Pandas, NumPy, Matplotlib, Seaborn), prinsip Business Intelligence, dan tools dashboard (Tableau/Power BI). Goal 12 bulan ke depan: end-to-end data pipeline &amp; interactive dashboard.</p><div class="dcc-tags"><span>Python (Belajar)</span><span>Pandas &amp; NumPy</span><span>Power BI / Tableau</span></div></div>
+        </div>
+      </div>
+
+      <!-- Overall competency chart -->
+      <div class="comp-chart reveal hover-tilt cinematic-card">
+        <h3>Gambaran Kompetensi Keseluruhan</h3>
+        <p>Snapshot kemampuan saat ini yang terus berkembang melalui proyek nyata, studi mandiri, dan kurikulum akademik yang relevan dengan kebutuhan industri.</p>
+        <div class="cc-grid">
+          <div class="ccg-row"><span>Frontend Development (HTML/CSS/Bootstrap)</span><div class="ccg-track"><div class="ccg-fill" data-w="86"><b>86%</b></div></div></div>
+          <div class="ccg-row"><span>Database Management (MySQL)</span><div class="ccg-track"><div class="ccg-fill" data-w="84"><b>84%</b></div></div></div>
+          <div class="ccg-row"><span>Mobile Development (Flutter)</span><div class="ccg-track"><div class="ccg-fill" data-w="83"><b>83%</b></div></div></div>
+          <div class="ccg-row"><span>Soft Skills &amp; Profesionalisme</span><div class="ccg-track"><div class="ccg-fill" data-w="85"><b>85%</b></div></div></div>
+          <div class="ccg-row"><span>Web Development (Laravel &amp; CodeIgniter)</span><div class="ccg-track"><div class="ccg-fill" data-w="80"><b>80%</b></div></div></div>
+          <div class="ccg-row"><span>Dokumentasi Teknis Profesional</span><div class="ccg-track"><div class="ccg-fill" data-w="80"><b>80%</b></div></div></div>
+          <div class="ccg-row"><span>Manajemen Proyek Digital</span><div class="ccg-track"><div class="ccg-fill" data-w="76"><b>76%</b></div></div></div>
+          <div class="ccg-row"><span>UI/UX Design (Figma)</span><div class="ccg-track"><div class="ccg-fill" data-w="73"><b>73%</b></div></div></div>
+          <div class="ccg-row ccg-growing"><span>Data Analytics (SQL &amp; Excel) ↑ Growing</span><div class="ccg-track"><div class="ccg-fill" data-w="71"><b>71% ↑</b></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUNSET HORIZON TRANSITION -->
+  <div class="section-divider sd-sunset">
+    <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
+      <path class="morph-wave-1" fill="#f5f0e8" d="M0,160 L120,130 C240,100 480,40 720,80 C960,120 1200,200 1320,220 L1440,240 L1440,200 L0,200 Z"></path>
+      <path class="morph-wave-2" fill="rgba(196, 155, 60, 0.04)" d="M0,120 C240,160 480,80 720,100 C960,120 1200,180 1440,140 L1440,200 L0,200 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="section s-contact">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow-chip">Hubungi Saya</span>
+        <h2>Siap berkolaborasi dan <em>mewujudkan ide menjadi kenyataan</em> bersama</h2>
+        <p class="sec-sub">Apakah Anda punya proyek menarik, peluang magang, tawaran kolaborasi, atau sekadar ingin berdiskusi teknologi? Saya selalu senang mendengar dari Anda!</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-channels reveal-left">
+          <h3>Saluran Komunikasi</h3>
+          <p>Pilih cara yang paling nyaman bagi Anda. Saya aktif di semua platform berikut dan berkomitmen merespons dalam 24 jam kerja.</p>
+          <div class="cc-items">
+            <a href="mailto:mufqi.andika@gmail.com" class="cci-item cinematic-card">
+              <div class="ccii-icon">✉️</div>
+              <div class="ccii-body"><span>Email Profesional</span><strong>mufqi.andika@gmail.com</strong><small>Respons dalam 24 jam kerja · Preferensi untuk diskusi proyek</small></div>
+              <span class="ccii-arr">→</span>
+            </a>
+            <a href="tel:+6281382887579" class="cci-item cinematic-card">
+              <div class="ccii-icon">📱</div>
+              <div class="ccii-body"><span>Telepon &amp; WhatsApp</span><strong>+62 813-8288-7579</strong><small>Senin–Jumat, 08.00–21.00 WIB · Aktif di WhatsApp</small></div>
+              <span class="ccii-arr">→</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mufqi-andika-pangestu" target="_blank" rel="noopener" class="cci-item cinematic-card">
+              <div class="ccii-icon">💼</div>
+              <div class="ccii-body"><span>LinkedIn Profile</span><strong>mufqi-andika-pangestu</strong><small>Koneksi profesional, rekomendasi, &amp; jaringan industri</small></div>
+              <span class="ccii-arr">→</span>
+            </a>
+            <a href="https://mufqi23.github.io/portofolio/" target="_blank" rel="noopener" class="cci-item cinematic-card">
+              <div class="ccii-icon">🔗</div>
+              <div class="ccii-body"><span>GitHub Portfolio</span><strong>mufqi23.github.io/portofolio</strong><small>Kode sumber proyek, repository, &amp; kontribusi open source</small></div>
+              <span class="ccii-arr">→</span>
+            </a>
+            <div class="cci-item no-link cinematic-card">
+              <div class="ccii-icon">📍</div>
+              <div class="ccii-body"><span>Lokasi Saat Ini</span><strong>Jakarta Timur, DKI Jakarta, Indonesia</strong><small>Terbuka untuk remote work, relokasi, &amp; on-site Jakarta</small></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-opps reveal-right">
+          <div class="co-card cinematic-card">
+            <div class="coc-status"><span class="coc-pulse"></span> Open to Opportunities</div>
+            <h3>Peluang yang Saya Cari</h3>
+            <p>Saya terbuka untuk berbagai bentuk kolaborasi dan kesempatan profesional yang memungkinkan saya berkontribusi nyata sekaligus terus bertumbuh sebagai seorang profesional teknologi.</p>
+            <div class="coc-items">
+              <div class="coci"><span>🎓</span><div><strong>Magang / Internship IT</strong><p>Posisi magang di bidang mobile development, web development, data analyst, atau digital management. Berkomitmen untuk memberikan nilai lebih selama periode magang.</p></div></div>
+              <div class="coci"><span>💼</span><div><strong>Part-time / Remote Freelance</strong><p>Proyek freelance atau posisi part-time remote untuk pengembangan aplikasi mobile Flutter, web platform Laravel/CodeIgniter, kebutuhan analisis data, atau dokumentasi teknis.</p></div></div>
+              <div class="coci"><span>🤝</span><div><strong>Kolaborasi Proyek &amp; Startup</strong><p>Bergabung sebagai developer, desainer, atau data analyst dalam tim startup teknologi, komunitas developer, atau proyek sosial yang berdampak positif.</p></div></div>
+              <div class="coci"><span>💡</span><div><strong>Networking &amp; Mentorship</strong><p>Diskusi mendalam tentang teknologi, tren industri, dan karir pengembangan perangkat lunak. Sangat menghargai mentorship dari profesional berpengalaman.</p></div></div>
+            </div>
+            <a href="CVMufqiAndikaPangestu.pdf" download class="btn-primary w-full">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV Lengkap (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="fg-brand">
+          <div class="fg-logo">MAP<span>☘</span></div>
+          <strong>Mufqi Andika Pangestu</strong>
+          <small>Mobile &amp; Web Developer · Data Analyst<br />UI/UX Designer · Digital Manager<br />S1 Sistem &amp; Teknologi Informasi — UHAMKA Jakarta</small>
+        </div>
+        <div class="fg-nav">
+          <h4>Navigasi</h4>
+          <a href="#home">Beranda</a>
+          <a href="#about">Tentang Saya</a>
+          <a href="#education">Pendidikan</a>
+          <a href="#skills">Keahlian</a>
+          <a href="#projects">Proyek</a>
+          <a href="#data">Data &amp; Digital</a>
+          <a href="#contact">Kontak</a>
+        </div>
+        <div class="fg-tech">
+          <h4>Teknologi</h4>
+          <span>Flutter · Dart</span>
+          <span>Laravel · PHP</span>
+          <span>CodeIgniter</span>
+          <span>MySQL · SQL</span>
+          <span>REST API</span>
+          <span>Figma · UI/UX</span>
+          <span>HTML5 · CSS3</span>
+          <span>Bootstrap 4/5</span>
+          <span>JavaScript</span>
+          <span>Excel · Word</span>
+        </div>
+        <div class="fg-contact">
+          <h4>Kontak</h4>
+          <a href="mailto:mufqi.andika@gmail.com">✉️ mufqi.andika@gmail.com</a>
+          <a href="tel:+6281382887579">📱 +62 813-8288-7579</a>
+          <a href="https://www.linkedin.com/in/mufqi-andika-pangestu" target="_blank">💼 LinkedIn Profile</a>
+          <a href="https://mufqi23.github.io/portofolio/" target="_blank">🔗 GitHub Portfolio</a>
+          <span>📍 Jakarta Timur, DKI Jakarta</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Mufqi Andika Pangestu · All rights reserved</p>
+        <p>Dibuat dengan semangat belajar, dedikasi penuh, dan cinta pada teknologi ❤️</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backTop" title="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
